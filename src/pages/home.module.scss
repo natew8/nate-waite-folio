@@ -1,0 +1,35 @@
+$nav-color: #dcd9c6;
+$hover-color: #556f7a;
+$active-color: #c97064;
+$black-color: #1b1924;
+
+.home-container {
+  height: 100%;
+}
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  div {
+    flex-grow: 1;
+    h1 {
+      font-family: sans-serif;
+      margin: 0%;
+      display: flex;
+      align-items: center;
+      text-transform: lowercase;
+      font-size: 5rem;
+      h1 {
+        margin: 0%;
+        font-size: 5.5rem;
+        margin-left: 1rem;
+        color: $active-color;
+      }
+    }
+  }
+  img {
+    height: 45rem;
+    border: 2px solid $black-color;
+    border-radius: 5px;
+    box-shadow: 5px 5px 13px $black-color;
+  }
+}
