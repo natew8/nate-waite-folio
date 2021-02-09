@@ -1,27 +1,26 @@
-import React from "react"
+import { Link } from "gatsby"
+import React, { useState } from "react"
 import headerStyle from "./header.module.scss"
+import Menu from "./Menu"
 
 function Header(props) {
+  const [menu, setMenu] = useState(false)
+
   return (
     <header className={headerStyle.header}>
       <nav className={headerStyle.nav}>
-        <h1 className={headerStyle.navTitle}>Nate Waite</h1>
-        <div className={headerStyle.burgerMenu}>
+        <h1>
+          <Link className={headerStyle.navTitle} to="/">
+            Nate Waite
+          </Link>
+        </h1>
+        <div onClick={() => setMenu(!menu)} className={headerStyle.burgerMenu}>
           <div className={headerStyle.burgerBarOne}></div>
           <div className={headerStyle.burgerBarTwo}></div>
           <div className={headerStyle.burgerBarThree}></div>
         </div>
       </nav>
-      {/* <ul className={headerStyle.ul}>
-          <li className={headerStyle.listItem}>Music</li>
-          <li className={headerStyle.listItem}>bio</li>
-          <li className={headerStyle.listItem}>news</li>
-        </ul> */}
-      {/* <ul className={headerStyle.ul}>
-          <li className={headerStyle.listItem}>Projects</li>
-          <li className={headerStyle.listItem}>Skills</li>
-          <li className={headerStyle.listItem}>contact</li>
-        </ul> */}
+      <Menu menu={menu} closeMenu={setMenu} />
     </header>
   )
 }
