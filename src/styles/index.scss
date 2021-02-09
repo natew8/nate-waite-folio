@@ -7,7 +7,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: $nav-color;
+  background: linear-gradient(135deg, $nav-color 60%, $active-color);
 }
 body {
   margin: 0;
