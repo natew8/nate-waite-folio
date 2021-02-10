@@ -7,18 +7,13 @@ import layoutStyles from "./layout.module.scss"
 
 function Layout(props) {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className={layoutStyles.container}
-      transition={{ duration: 1 }}
-    >
+    <div className={layoutStyles.container}>
       <div className={layoutStyles.content}>
         <Header />
         {props.children}
       </div>
       <Footer />
-    </motion.div>
+    </div>
   )
 }
 

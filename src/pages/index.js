@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import Layout from "../components/Layout/Layout"
 import Titles from "../components/Titles/Titles"
 import homeStyles from "./home.module.scss"
+import { Link } from "gatsby"
 
 export default function Home() {
   const [done, setDone] = useState(false)
@@ -31,6 +32,9 @@ export default function Home() {
               <h1 className={homeStyles.myName}>Nate,</h1>
             </motion.h1>
             <h1>{done ? <Titles /> : <h1></h1>}</h1>
+            <div>
+              <p>A small blurb about me and my things that i do</p>
+            </div>
             <motion.span
               initial={{ opacity: 0, translateX: 100 }}
               animate={{ opacity: 1, translateX: 0 }}
@@ -38,7 +42,9 @@ export default function Home() {
             >
               <button className={homeStyles.contact}>.portfolio</button>
               <button className={homeStyles.contact}>.music</button>
-              <button className={homeStyles.contact}>.contact</button>
+              <Link to="/contact">
+                <button className={homeStyles.contact}>.contact</button>
+              </Link>
             </motion.span>
           </div>
           <motion.img

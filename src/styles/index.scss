@@ -2,12 +2,13 @@
 $nav-color: #dcd9c6;
 $hover-color: #556f7a;
 $active-color: #c97064;
+$black-color: #1b1924;
 
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background: linear-gradient(135deg, $nav-color 60%, $active-color);
+  background-color: #dcd9c6;
 }
 body {
   margin: 0;
