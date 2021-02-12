@@ -4,8 +4,11 @@ $active-color: #c97064;
 $black-color: #1b1924;
 
 #layerOne {
+  // border: 3px solid black;
+  padding: 0rem;
   fill: $black-color;
   margin: 0%;
-  margin-left: 2rem;
+  margin-left: 4rem;
   // width: 800px;
+  // height: 800px;
 }
