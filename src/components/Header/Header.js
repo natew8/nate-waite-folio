@@ -9,16 +9,12 @@ function Header(props) {
   return (
     <header className={headerStyle.header}>
       <nav className={headerStyle.nav}>
-        <h1>
-          <Link className={headerStyle.navTitle} to="/">
-            Nate Waite
-          </Link>
-        </h1>
-        <div onClick={() => setMenu(!menu)} className={headerStyle.burgerMenu}>
+        <h1 className={headerStyle.logo}>NW</h1>
+        <h1 onClick={() => setMenu(!menu)} className={headerStyle.burgerMenu}>
           <div className={headerStyle.burgerBarOne}></div>
           <div className={headerStyle.burgerBarTwo}></div>
           <div className={headerStyle.burgerBarThree}></div>
-        </div>
+        </h1>
       </nav>
       <Menu menu={menu} closeMenu={setMenu} />
     </header>

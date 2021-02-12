@@ -9,6 +9,7 @@ $active-color: #c97064;
 $black-color: #1b1924;
 
 .header {
+  margin: 0%;
   display: flex;
   align-items: center;
   padding: 1rem 0;
@@ -19,11 +20,7 @@ $black-color: #1b1924;
   justify-content: space-between;
 }
 .nav-title {
-  margin: 0%;
-  font-family: sans-serif;
-  color: $active-color;
-  text-transform: lowercase;
-  text-decoration: none;
+  margin: 0rem;
 }
 
 // Burger menu
@@ -95,4 +92,13 @@ $black-color: #1b1924;
 }
 .active-list-item {
   color: $active-color;
+}
+
+.logo {
+  margin: 0%;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+  height: 60px;
+  width: 70px;
 }

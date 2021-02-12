@@ -4,6 +4,7 @@ import Layout from "../components/Layout/Layout"
 import Titles from "../components/Titles/Titles"
 import homeStyles from "./home.module.scss"
 import { Link } from "gatsby"
+import Flower from "../components/Flower"
 
 export default function Home() {
   const [done, setDone] = useState(false)
@@ -15,7 +16,7 @@ export default function Home() {
     <Layout>
       <div className={homeStyles.homeContainer}>
         <span className={homeStyles.welcome}>
-          <div>
+          <div id={homeStyles.divText}>
             <motion.h1
               initial={{ opacity: 0, translateY: -100 }}
               animate={{ opacity: 1, translateY: 0 }}
@@ -32,28 +33,71 @@ export default function Home() {
               <h1 className={homeStyles.myName}>Nate,</h1>
             </motion.h1>
             <h1>{done ? <Titles /> : <h1></h1>}</h1>
-            <div>
-              <p>A small blurb about me and my things that i do</p>
-            </div>
             <motion.span
               initial={{ opacity: 0, translateX: 100 }}
               animate={{ opacity: 1, translateX: 0 }}
               transition={{ delay: 9.5, duration: 0.5 }}
             >
-              <button className={homeStyles.contact}>.portfolio</button>
+              <Link to="/portfolio">
+                <button className={homeStyles.contact}>.portfolio</button>
+              </Link>
               <button className={homeStyles.contact}>.music</button>
               <Link to="/contact">
                 <button className={homeStyles.contact}>.contact</button>
               </Link>
             </motion.span>
+            <motion.span
+              className={homeStyles.iconContainer}
+              initial={{ opacity: 0, translateY: 100 }}
+              animate={{ opacity: 1, translateY: 0 }}
+              transition={{ delay: 9.5, duration: 0.5 }}
+            >
+              <img
+                id="guthub"
+                className={homeStyles.icon}
+                src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/github.svg"
+                alt="github"
+              />
+              <img
+                id="linked"
+                className={homeStyles.icon}
+                src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/linkedin.svg"
+                alt="linkedIn"
+              />
+              <img
+                id="ig"
+                className={homeStyles.icon}
+                src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/instagram.svg"
+                alt="IG"
+              />
+              <img
+                id="spotify"
+                className={homeStyles.icon}
+                src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/spotify.svg"
+                alt="Spotify"
+              />
+              <img
+                id="apple"
+                className={homeStyles.icon}
+                src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/applemusic.svg"
+                alt="AppleMusic"
+              />
+              <img
+                id="youtube"
+                className={homeStyles.icon}
+                src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/youtube.svg"
+                alt="youtube"
+              />
+            </motion.span>
           </div>
-          <motion.img
+          {/* <motion.img
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 9.5, duration: 0.5 }}
             src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/natewaite.jpg"
             alt="nate"
-          />
+          /> */}
+          <Flower />
         </span>
       </div>
     </Layout>

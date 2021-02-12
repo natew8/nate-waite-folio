@@ -19,7 +19,7 @@ function Titles(props) {
       if (timesRun === 5) {
         clearInterval(interval)
       }
-    }, 950)
+    }, 800)
     return () => clearInterval(interval)
   }, [])
 

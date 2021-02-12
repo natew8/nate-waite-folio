@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import menuStyles from "./menu.module.scss"
 
@@ -10,7 +11,11 @@ function menu(props) {
     >
       <h1 onClick={() => closeMenu(!menu)}>&times;</h1>
       <ul>
-        <li>About</li>
+        <li>
+          <Link style={{ textDecoration: "none" }} to="/about">
+            About
+          </Link>
+        </li>
         <li>Skills</li>
         <li>Projects</li>
         <li>Contact</li>

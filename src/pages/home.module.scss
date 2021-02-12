@@ -4,16 +4,13 @@ $active-color: #c97064;
 $black-color: #1b1924;
 $white: #f3f2f1;
 
-.home-container {
-  height: 100%;
-}
 .welcome {
+  box-sizing: border-box;
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  div {
-    flex-grow: 1;
-    margin-top: auto;
-    margin-bottom: auto;
+  #divText {
+    padding: 10rem 0rem 0rem 0rem;
+    width: 50%;
     h1 {
       font-family: sans-serif;
       margin: 0% auto;
@@ -21,6 +18,7 @@ $white: #f3f2f1;
       align-items: center;
       font-size: 5rem;
       .myName {
+        font-size: 6rem;
         margin-left: 1rem;
         color: $active-color;
       }
@@ -33,23 +31,15 @@ $white: #f3f2f1;
     }
     span {
       display: flex;
-      justify-content: flex-start;
-      margin-top: 1rem;
-      height: 2.5em;
-
       button {
         transition: all ease 0.3s;
       }
     }
   }
-  img {
-    height: 40rem;
-    border: 2px solid $black-color;
-    box-shadow: 15px 10px 0px $hover-color;
-  }
 }
 
 .contact {
+  margin-top: 4.5rem;
   background-color: transparent;
   color: $black-color;
   font-family: sans-serif;
@@ -65,4 +55,20 @@ $white: #f3f2f1;
   cursor: pointer;
   background-color: $black-color;
   color: $white;
+}
+
+.iconContainer {
+  position: absolute;
+  bottom: 0rem;
+  display: flex;
+  height: fit-content;
+  .icon {
+    position: static;
+    border: none;
+    margin: 0%;
+    box-shadow: none;
+    height: fit-content;
+    width: 60px;
+    margin-right: 2rem;
+  }
 }
