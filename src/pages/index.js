@@ -53,37 +53,37 @@ export default function Home() {
               transition={{ delay: 9.5, duration: 0.5 }}
             >
               <img
-                id="guthub"
+                id={homeStyles.github}
                 className={homeStyles.icon}
                 src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/github.svg"
                 alt="github"
               />
               <img
-                id="linked"
+                id={homeStyles.linked}
                 className={homeStyles.icon}
                 src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/linkedin.svg"
                 alt="linkedIn"
               />
               <img
-                id="ig"
+                id={homeStyles.ig}
                 className={homeStyles.icon}
                 src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/instagram.svg"
                 alt="IG"
               />
               <img
-                id="spotify"
+                id={homeStyles.spotify}
                 className={homeStyles.icon}
                 src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/spotify.svg"
                 alt="Spotify"
               />
               <img
-                id="apple"
+                id={homeStyles.apple}
                 className={homeStyles.icon}
                 src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/applemusic.svg"
                 alt="AppleMusic"
               />
               <img
-                id="youtube"
+                id={homeStyles.youtube}
                 className={homeStyles.icon}
                 src="https://nw-portfolio-images.s3-us-west-1.amazonaws.com/youtube.svg"
                 alt="youtube"
