@@ -22,11 +22,28 @@ $black-color: #1b1924;
   h1 {
     margin: 0%;
   }
+  div {
+    display: flex;
+  }
 }
 
 // Burger menu
 .burger-menu {
   padding: 0.5rem 0;
+}
+.burger-menu-active {
+  padding: 0.5rem 0;
+  .burger-bar-one {
+    transform: translateX(-14px);
+    border: 1px solid $active-color;
+  }
+  .burger-bar-two {
+    border: 1px solid $active-color;
+  }
+  .burger-bar-three {
+    border: 1px solid $active-color;
+    transform: translateX(14px);
+  }
 }
 .burger-menu:hover {
   cursor: pointer;

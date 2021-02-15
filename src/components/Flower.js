@@ -5,16 +5,16 @@ import flowerStyles from "./flower.module.scss"
 function Flower(props) {
   return (
     <motion.svg
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 6, duration: 5 }}
+      initial={{ opacity: 0, rotate: 0 }}
+      animate={{ opacity: 1, rotate: 90 }}
+      transition={{ delay: 6, duration: 3 }}
       version="1.1"
       id={flowerStyles.layerOne}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      x="-500px"
-      y="50px"
-      viewBox="0 0 720 720"
+      x="310px"
+      y="-450px"
+      viewBox="0 0 920 820"
       xmlSpace="preserve"
     >
       <motion.path
@@ -30,7 +30,7 @@ function Flower(props) {
 		c-0.15-2.54,3.05-3.95,5.21-4.92C202.53,377.25,200.59,379.47,203.88,379.18z"
         initial={{ translateX: 300, translateY: 400 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         class="st1"
@@ -39,7 +39,7 @@ function Flower(props) {
 		c3.13-5.08,8.48-6.69,8.48-6.69l7.37-6.6C240.52,367.71,245.6,364.25,243.59,369.06z"
         initial={{ translateX: 0, translateY: 0 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M257.39,342.4c4.99,1.57,11.1,3.72,12.36,5.59c1.26,1.86,8.26,2.08,8.78,4.69c0.53,2.61-2.9,5.36-6.63,7.82
@@ -47,41 +47,41 @@ function Flower(props) {
 		c0.15-3.58-0.02-3.58-2.1-3.8c-2.08-0.23-3.04-0.37-3.04-0.37l-4.62-5.95C256.06,345.61,252.42,340.85,257.39,342.4z"
         initial={{ translateX: 0, translateY: 0 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M243.87,338.46c3.91,0,7.65,4.52,9.71,9.76c2.07,5.25,3.84,5.37,2.01,7.93c0,0-7.93,12.01-7.98,5.14
 		c-0.06-6.86,0.05-9.65-2.79-14.46C241.97,342.03,239.96,338.46,243.87,338.46z"
         initial={{ translateX: 0, translateY: 0 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M253.81,332.26c6.48,2.18,9.91,7.66,9.91,7.66c-2.71,1.89-20.35-8.26-20.35-8.26S247.33,330.08,253.81,332.26z		"
         initial={{ translateX: 0, translateY: 0 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M241.97,352.47c0,0,2.46,7.2-2.57,11.28c-5.02,4.08-8.93,4.97-8.15,0
 		C232.03,358.78,237.16,348.62,241.97,352.47z"
         initial={{ translateX: 0, translateY: 0 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M234.06,337.49c2.27,0.07,3.06,2.66,3.06,2.66c-0.78,4.63-5.07,1.22-5.45,0.25
 		C231.27,339.42,231.79,337.42,234.06,337.49z"
         initial={{ translateX: 0, translateY: 0 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />{" "}
       <motion.path
         d="M233.13,346.87c2.35,2.42,1.94,3.13-1.19,4.74c0,0-3.54,0.43-4.28,10.11c-0.74,9.67-0.44,11.65-4.06,12.8
 		c-3.61,1.16-2.64-4.54-2.28-8.6c0.35-4.06,2.51-7.11,4.56-15.67C227.92,341.7,230.78,344.45,233.13,346.87z"
         initial={{ translateX: 0, translateY: 0 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M218.63,315.18c-1.62,5.81-1.17,17.7,5.03,21.78c6.19,4.08-0.62,8.54-0.62,8.7c0,0.17-1.84,2.23-1.28,6.54
@@ -91,7 +91,7 @@ function Flower(props) {
 		S220.26,309.37,218.63,315.18z"
         initial={{ translateX: 633, translateY: -128 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M197.3,352.8c0,0,1.45,0.34,4.03,3.02c2.57,2.68,4.52,7.6,4.52,7.6s6.53,4.01,6.98,10.55c0,0-5.86,0.89-8.15,0
@@ -102,7 +102,7 @@ function Flower(props) {
 		C185.14,346.28,187.87,351.02,197.3,352.8z"
         initial={{ translateX: 0, translateY: 600 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M202.95,330.31c2.57,2.16,3.9,3.71,3.9,3.71l1.83,0.78l0.44,1.9c0,0,2.23,0.78,3.21,3.05
@@ -110,7 +110,7 @@ function Flower(props) {
 		c-0.68-1.6,1.41-2.12,6.1-3.38C189.32,328.67,200.38,328.15,202.95,330.31z"
         initial={{ translateX: 200, translateY: -400 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M217.65,307.2c-3.06,4.69-17.57,8.7-17.57,8.7s-6.55,4.1-12.35,5.44c-5.81,1.33-4.55,3.71-4.4,4.91
@@ -120,7 +120,7 @@ function Flower(props) {
 		s2.46-1.49,5.6-8.26c3.14-6.77,14.06-9.98,20.16-11.76C219.66,292.08,220.7,302.5,217.65,307.2z"
         initial={{ translateX: 545, translateY: -400 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M214.2,258.36c0.32,6.11,0.72,8.05,0.72,8.05s1.62,3.13-0.32,8.18c-1.93,5.07-0.39,7.82-0.39,7.82
@@ -128,7 +128,7 @@ function Flower(props) {
 		c4.1-4.77,11.91-17.43,13.1-20.33C209.23,254.04,213.87,252.26,214.2,258.36z"
         initial={{ translateX: 545, translateY: -400 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M173.57,216.97c2.74,4.85,1.68,5.02,0.51,7.92c-1.18,2.91-3.63,6.31-1.73,17.87c1.16,7.01,1.38,8.49,1.38,8.58
@@ -137,13 +137,13 @@ function Flower(props) {
 		c3.19-2.96,10.11-5.91,10.95-19.53c0.83-13.62,2.84-21.89,5.8-33.95C169.05,224.06,170.84,212.11,173.57,216.97z"
         initial={{ translateX: 0, translateY: -500 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M156.71,261.41c0,0,1.9,9.71-1.89,14.96c-3.8,5.25-10.33,12.46-10.72,13.68c-0.39,1.23-2.85-7.37,4.19-17.14		C155.32,263.14,156.05,258.29,156.71,261.41z"
         initial={{ translateX: -299, translateY: -400 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M162.52,231.37c-1.01,9.83-10.5,29.1-10.5,29.1s-9.71,15.68-11.39,22.27c-1.68,6.59-0.23,11.06,1.78,17.53
@@ -152,7 +152,7 @@ function Flower(props) {
 		C158.72,230.15,163.52,221.55,162.52,231.37z"
         initial={{ translateX: -400, translateY: -500 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />{" "}
       <motion.path
         d="M90.76,275.78c0,0,4.1,4.35,4.24,4.39c0.15,0.04,0.29,0.77,3.31,4.46c3.02,3.69,18.31,11.84,23,16.08
@@ -161,7 +161,7 @@ function Flower(props) {
 		c-1.19-15.45-7.96-27.5-9.97-30.86c-2.01-3.35,3.57-3.69,6.81-6.11C84.36,262.45,90.76,275.78,90.76,275.78z"
         initial={{ translateX: -600, translateY: -300 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M70.25,302.36c10.57,1.49,13.32,4.47,18.02,4.76c4.69,0.29,11.54,0.15,18.31,6.25
@@ -173,14 +173,14 @@ function Flower(props) {
 		C57.52,306.37,59.68,300.87,70.25,302.36z"
         initial={{ translateX: -400, translateY: -123 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M92.14,350.89c5.72,1.26,18.39,8.49,18.39,8.49c1.71,1.93,4.69,1.04,7.29,4.31c2.61,3.27-23.9,1.49-36.4,0.89
 		c-12.51-0.59-24.04,2.75-27.02,4.02c-2.98,1.27-5.06-1.48-4.47-3.49c0.6-2.02-1.49-5.36-3.5-8.94c-2.01-3.57,0.97-4.39,4.62-3.94		c3.65,0.44,9.9-1.27,16.6-2.31C74.34,348.88,86.41,349.63,92.14,350.89z"
         initial={{ translateX: -600, translateY: 0 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M129.5,368.46c-2.68,3.35-12.13,8.42-14.89,8.19c-2.75-0.23-5.2,0.55-9.3,1.31
@@ -189,14 +189,14 @@ function Flower(props) {
 		C125.42,364.44,132.19,365.11,129.5,368.46z"
         initial={{ translateX: -300, translateY: 200 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M46.28,379.26c2.31,4.39,6.4,8.04,6.4,8.04s9.68,7.15,4.24,8.18c-5.43,1.05-6.4,2.23-9.01,2.83
 		c-2.61,0.6-2.61-1.04-2.53-4.17s-1.41-6.11-3.65-6.85c-2.23-0.74-3.95-2.75-2.69-4.32C40.33,381.41,43.97,374.86,46.28,379.26z"
         initial={{ translateX: -300, translateY: 200 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M132.59,376.53c0.56,1.24-5.02,2.69-7.15,3.58c-2.12,0.89-5.35,5.24-5.58,8.6
@@ -209,7 +209,7 @@ function Flower(props) {
 		S132.04,375.31,132.59,376.53z"
         initial={{ translateX: -200, translateY: 300 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M166.21,374.75c9.38,9.49,12.72,17.64,15.24,24.23c2.52,6.59-9.44,13.85-11.22,19.77
@@ -219,14 +219,14 @@ function Flower(props) {
 		c-2.35-5.8,0.44-14.07,0.44-14.07C153.45,362.02,156.83,365.26,166.21,374.75z"
         initial={{ translateX: 0, translateY: 400 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       <motion.path
         d="M141.6,380.22c0,0-0.74,2.23-3.12,5.25c-2.37,3.01-3.1,10.5-4.77,16.19c-1.67,5.69-3.01-0.68-5.69-5.59
 		c-2.68-4.91,1.12-7.37,1.12-7.37l8.61-8.49C143.31,376.24,141.6,380.22,141.6,380.22z"
         initial={{ translateX: -45, translateY: 400 }}
         animate={{ translateX: 0, translateY: 0 }}
-        transition={{ delay: 7, duration: 5, ease: "easeInOut" }}
+        transition={{ delay: 7, duration: 4, ease: "easeInOut" }}
       />
       {/* Stem */}
       <path

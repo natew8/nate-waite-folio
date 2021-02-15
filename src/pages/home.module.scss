@@ -13,10 +13,13 @@ $white: #f3f2f1;
   display: flex;
   height: 100%;
   #divText {
+    margin-top: 1rem;
     width: 50%;
     div {
-      margin-top: 1rem;
-      margin-bottom: 5.6rem;
+      padding-left: 1rem;
+      border-left: 4px solid $black-color;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
       width: 95%;
     }
     h1 {
@@ -83,7 +86,6 @@ $white: #f3f2f1;
   outline: none;
   border: 3px solid $hover-color;
   border-radius: 0;
-  margin-right: 1rem;
 }
 .music:hover {
   color: #f3f2f1;
@@ -97,4 +99,9 @@ $white: #f3f2f1;
 .picture {
   border-radius: 0px 20px 20px 0px;
   box-shadow: 10px 10px 0px $black-color;
+}
+
+.line {
+  margin: 0% 1rem;
+  border-right: 1px solid $black-color;
 }

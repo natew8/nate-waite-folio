@@ -28,24 +28,28 @@ export default function Home() {
             <motion.h1
               initial={{ opacity: 0, translateX: -100 }}
               animate={{ opacity: 1, translateX: 0 }}
-              transition={{ delay: 1.5, duration: 1.5 }}
+              transition={{ delay: 1.51, duration: 1.5 }}
             >
               I'm
               <h1 className={homeStyles.myName}>Nate,</h1>
             </motion.h1>
             <h1>{done ? <Titles /> : <h1>{null}</h1>}</h1>
-            <div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 9.53, duration: 0.5 }}
+            >
               <h3>
                 This site was built to serve both as a portfolio for my work in
                 web development, as well as an artist page for my work as a
                 songwriter and music producer.
               </h3>
               <h3>Whatever brings you, welcome!</h3>
-            </div>
+            </motion.div>
             <motion.span
               initial={{ opacity: 0, translateX: 100 }}
               animate={{ opacity: 1, translateX: 0 }}
-              transition={{ delay: 9.5, duration: 0.5 }}
+              transition={{ delay: 9.54, duration: 0.5 }}
             >
               <AniLink cover direction="left" bg="#c97064" to="/portfolio">
                 <button className={homeStyles.portfolio}>.portfolio</button>
@@ -60,9 +64,15 @@ export default function Home() {
             <SocialLinks />
           </div>
           <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 9.56, duration: 0.5 }}
+            className={homeStyles.line}
+          ></motion.div>
+          <motion.div
             initial={{ opacity: 0, translateX: 100 }}
             animate={{ opacity: 1, translateX: 0 }}
-            transition={{ delay: 9.5, duration: 0.5 }}
+            transition={{ delay: 9.55, duration: 0.5 }}
             className={homeStyles.photoContainer}
           >
             <img

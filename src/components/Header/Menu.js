@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import React from "react"
 import menuStyles from "./menu.module.scss"
 
@@ -9,16 +9,57 @@ function menu(props) {
       id={menuStyles.container}
       className={menu ? menuStyles.show : menuStyles.hide}
     >
-      <h1 onClick={() => closeMenu(!menu)}>&times;</h1>
       <ul>
+        <div className={menuStyles.line}></div>
         <li>
-          <Link style={{ textDecoration: "none" }} to="/about">
-            About
-          </Link>
+          <AniLink
+            className={menuStyles.link}
+            cover
+            direction="right"
+            bg="#1b1924"
+            to="/portfolio"
+          >
+            .portfolio
+          </AniLink>
         </li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <div
+          className={menuStyles.line}
+          cover
+          direction="right"
+          bg="#1b1924"
+          to="/music"
+        ></div>
+        <li>
+          <AniLink className={menuStyles.link}>.music</AniLink>
+        </li>
+        <div
+          className={menuStyles.line}
+          cover
+          direction="right"
+          bg="#1b1924"
+        ></div>
+        <li>
+          <AniLink
+            className={menuStyles.link}
+            direction="right"
+            bg="#1b1924"
+            style={{ textDecoration: "none" }}
+            to="/about"
+          >
+            .about
+          </AniLink>
+        </li>
+        <div className={menuStyles.line}></div>
+        <li>
+          <AniLink
+            className={menuStyles.link}
+            cover
+            direction="right"
+            to="/contact"
+          >
+            .contact
+          </AniLink>
+        </li>
       </ul>
     </div>
   )

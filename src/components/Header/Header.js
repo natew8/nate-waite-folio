@@ -18,13 +18,20 @@ function Header(props) {
             NW
           </Link>
         </h1>
-        <h1 onClick={() => setMenu(!menu)} className={headerStyle.burgerMenu}>
-          <div className={headerStyle.burgerBarOne}></div>
-          <div className={headerStyle.burgerBarTwo}></div>
-          <div className={headerStyle.burgerBarThree}></div>
-        </h1>
+        <div>
+          <Menu menu={menu} closeMenu={setMenu} />
+          <h1
+            onClick={() => setMenu(!menu)}
+            className={
+              !menu ? headerStyle.burgerMenu : headerStyle.burgerMenuActive
+            }
+          >
+            <div className={headerStyle.burgerBarOne}></div>
+            <div className={headerStyle.burgerBarTwo}></div>
+            <div className={headerStyle.burgerBarThree}></div>
+          </h1>
+        </div>
       </nav>
-      <Menu menu={menu} closeMenu={setMenu} />
     </header>
   )
 }
