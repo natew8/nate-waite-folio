@@ -4,6 +4,7 @@ import Layout from "../components/Layout/Layout"
 import Titles from "../components/Titles/Titles"
 import homeStyles from "./home.module.scss"
 import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Flower from "../components/Flower"
 import SocialLinks from "../components/SocialLinks/SocialLinks"
 
@@ -46,10 +47,12 @@ export default function Home() {
               animate={{ opacity: 1, translateX: 0 }}
               transition={{ delay: 9.5, duration: 0.5 }}
             >
-              <Link to="/portfolio">
+              <AniLink cover direction="left" bg="#c97064" to="/portfolio">
                 <button className={homeStyles.portfolio}>.portfolio</button>
-              </Link>
-              <button className={homeStyles.music}>.music</button>
+              </AniLink>
+              <AniLink cover direction="right" bg="black" to="/about">
+                <button className={homeStyles.music}>.music</button>
+              </AniLink>
               {/* <Link to="/contact">
                 <button className={homeStyles.contact}>.contact</button>
               </Link> */}
