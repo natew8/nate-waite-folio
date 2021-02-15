@@ -5,15 +5,15 @@ import flowerStyles from "./flower.module.scss"
 function Flower(props) {
   return (
     <motion.svg
-      initial={{ rotate: 0, width: 0 }}
-      animate={{ rotate: 90, width: 800 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       transition={{ delay: 6, duration: 5 }}
       version="1.1"
       id={flowerStyles.layerOne}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      x="0px"
-      y="0px"
+      x="-500px"
+      y="50px"
       viewBox="0 0 720 720"
       xmlSpace="preserve"
     >

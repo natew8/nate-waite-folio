@@ -4,6 +4,7 @@ $active-color: #c97064;
 $black-color: #1b1924;
 
 .container {
+  overflow: hidden;
   margin: 0 auto;
   max-width: 1600px;
   padding: 1rem;
@@ -13,5 +14,7 @@ $black-color: #1b1924;
 }
 
 .content {
+  overflow: hidden;
+  padding: 1rem 0rem;
   flex-grow: 1;
 }

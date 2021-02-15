@@ -1,0 +1,59 @@
+.iconContainer {
+  position: absolute;
+  bottom: 0rem;
+  display: flex;
+  height: fit-content;
+  a {
+    margin: 0%;
+    position: static;
+    margin-right: 2rem;
+    height: fit-content;
+  }
+  .icon {
+    filter: invert(7%) sepia(16%) saturate(1369%) hue-rotate(210deg)
+      brightness(97%) contrast(91%);
+    margin-bottom: 0;
+    border: none;
+    box-shadow: none;
+    width: 60px;
+    transition: transform ease 0.3s;
+  }
+  .icon:hover {
+    transform: translateY(-10px);
+  }
+}
+#github:hover {
+  cursor: pointer;
+  filter: invert(26%) sepia(21%) saturate(7427%) hue-rotate(248deg)
+    brightness(90%) contrast(88%);
+}
+#linked:hover {
+  filter: invert(44%) sepia(13%) saturate(4010%) hue-rotate(169deg)
+    brightness(86%) contrast(87%);
+  cursor: pointer;
+}
+#email:hover {
+  filter: invert(10%) sepia(77%) saturate(6194%) hue-rotate(358deg)
+    brightness(114%) contrast(129%);
+  cursor: pointer;
+}
+#ig:hover {
+  filter: invert(52%) sepia(63%) saturate(6356%) hue-rotate(321deg)
+    brightness(88%) contrast(85%);
+  cursor: pointer;
+}
+#spotify:hover {
+  filter: invert(64%) sepia(88%) saturate(384%) hue-rotate(76deg)
+    brightness(93%) contrast(85%);
+  cursor: pointer;
+}
+#apple:hover {
+  filter: invert(44%) sepia(68%) saturate(3441%) hue-rotate(325deg)
+    brightness(104%) contrast(90%);
+  cursor: pointer;
+}
+#youtube:hover {
+  filter: invert(10%) sepia(77%) saturate(6194%) hue-rotate(358deg)
+    brightness(114%) contrast(129%);
+  cursor: pointer;
+}

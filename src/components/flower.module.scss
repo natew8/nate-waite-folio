@@ -1,14 +1,17 @@
-$nav-color: #dcd9c6;
+$flower-color: #c7c4a8b4;
 $hover-color: #556f7a;
 $active-color: #c97064;
 $black-color: #1b1924;
 
 #layerOne {
-  // border: 3px solid black;
+  margin-left: -10rem;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
   padding: 0rem;
-  fill: $black-color;
+  fill: $flower-color;
   margin: 0%;
-  margin-left: 4rem;
-  // width: 800px;
-  // height: 800px;
+  height: 100vh;
+  width: 100vw;
+  z-index: -300;
 }

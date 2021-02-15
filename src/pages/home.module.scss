@@ -1,16 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
 $nav-color: #dcd9c6;
 $hover-color: #556f7a;
 $active-color: #c97064;
 $black-color: #1b1924;
 $white: #f3f2f1;
-
+.homeContainer {
+  overflow: hidden;
+}
 .welcome {
   box-sizing: border-box;
   position: relative;
   display: flex;
+  height: 100%;
   #divText {
-    padding: 10rem 0rem 0rem 0rem;
-    width: 55%;
+    width: 50%;
+    div {
+      margin-top: 0rem;
+      margin-bottom: 6rem;
+      width: 95%;
+    }
     h1 {
       font-family: sans-serif;
       margin: 0% auto;
@@ -29,83 +37,64 @@ $white: #f3f2f1;
         color: $hover-color;
       }
     }
+    h3 {
+      font-weight: 100;
+      color: $black-color;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      margin: 0%;
+      text-align: left;
+    }
     span {
-      margin-top: 5rem;
+      padding: 0.6rem 0rem;
+      margin-top: 0rem;
       display: flex;
       button {
+        box-shadow: 2px 3px 10px $black-color;
         transition: all ease 0.3s;
       }
     }
   }
 }
 
-.contact {
-  background-color: transparent;
+.portfolio {
+  background-color: #c970647e;
   color: $black-color;
   font-family: sans-serif;
   font-weight: 800;
   width: 10rem;
   height: 2.5rem;
   outline: none;
-  border: 3px solid $black-color;
+  border: 3px solid $active-color;
   border-radius: 0;
   margin-right: 1rem;
 }
-.contact:hover {
+.portfolio:hover {
+  color: #f3f2f1;
   cursor: pointer;
-  background-color: $black-color;
-  color: $white;
+  background-color: $active-color;
 }
-
-.iconContainer {
-  position: absolute;
-  bottom: 0rem;
-  display: flex;
-  height: fit-content;
-  a {
-    margin: 0%;
-    position: static;
-    margin-right: 2rem;
-    height: fit-content;
-  }
-  .icon {
-    margin-bottom: 0;
-    border: none;
-    box-shadow: none;
-    width: 60px;
-    transition: transform ease 0.3s;
-  }
-  .icon:hover {
-    transform: translateY(-10px);
-  }
+.music {
+  background-color: #556f7a7e;
+  color: $black-color;
+  font-family: sans-serif;
+  font-weight: 800;
+  width: 10rem;
+  height: 2.5rem;
+  outline: none;
+  border: 3px solid $hover-color;
+  border-radius: 0;
+  margin-right: 1rem;
 }
-#github:hover {
-  cursor: pointer;
-  filter: invert(26%) sepia(21%) saturate(7427%) hue-rotate(248deg)
-    brightness(90%) contrast(88%);
-}
-#linked:hover {
-  filter: invert(44%) sepia(13%) saturate(4010%) hue-rotate(169deg)
-    brightness(86%) contrast(87%);
+.music:hover {
+  color: #f3f2f1;
+  background-color: #556f7a;
   cursor: pointer;
 }
-#ig:hover {
-  filter: invert(52%) sepia(63%) saturate(6356%) hue-rotate(321deg)
-    brightness(88%) contrast(85%);
-  cursor: pointer;
+.photoContainer {
+  padding: 2rem 1rem 0rem 1rem;
+  width: 50%;
 }
-#spotify:hover {
-  filter: invert(64%) sepia(88%) saturate(384%) hue-rotate(76deg)
-    brightness(93%) contrast(85%);
-  cursor: pointer;
-}
-#apple:hover {
-  filter: invert(44%) sepia(68%) saturate(3441%) hue-rotate(325deg)
-    brightness(104%) contrast(90%);
-  cursor: pointer;
-}
-#youtube:hover {
-  filter: invert(10%) sepia(77%) saturate(6194%) hue-rotate(358deg)
-    brightness(114%) contrast(129%);
-  cursor: pointer;
+.picture {
+  border-radius: 0px 20px 20px 0px;
+  box-shadow: 10px 10px 0px $black-color;
 }

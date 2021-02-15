@@ -12,15 +12,16 @@ $black-color: #1b1924;
   margin: 0%;
   display: flex;
   align-items: center;
-  padding: 1rem 0;
 }
 .nav {
+  padding: 1rem 0px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-}
-.nav-title {
-  margin: 0rem;
+  align-items: center;
+  h1 {
+    margin: 0%;
+  }
 }
 
 // Burger menu
@@ -95,10 +96,7 @@ $black-color: #1b1924;
 }
 
 .logo {
-  margin: 0%;
-  font-size: 1.5rem;
-  text-align: center;
+  border: 5px solid $black-color;
+  color: $active-color;
   padding: 10px;
-  height: 60px;
-  width: 70px;
 }

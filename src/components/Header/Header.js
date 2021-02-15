@@ -9,7 +9,15 @@ function Header(props) {
   return (
     <header className={headerStyle.header}>
       <nav className={headerStyle.nav}>
-        <h1 className={headerStyle.logo}>NW</h1>
+        <h1>
+          <Link
+            style={{ textDecoration: "none" }}
+            className={headerStyle.logo}
+            to="/"
+          >
+            NW
+          </Link>
+        </h1>
         <h1 onClick={() => setMenu(!menu)} className={headerStyle.burgerMenu}>
           <div className={headerStyle.burgerBarOne}></div>
           <div className={headerStyle.burgerBarTwo}></div>
