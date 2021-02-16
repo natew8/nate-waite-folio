@@ -125,20 +125,27 @@ const otherTech = [
       "invert(15%) sepia(52%) saturate(5180%) hue-rotate(265deg) brightness(78%) contrast(140%)",
   },
   {
-    id: 6,
-    name: "Redux",
-    icon: "https://nw-portfolio-images.s3-us-west-1.amazonaws.com/redux.svg",
+    id: 19,
+    name: "Figma",
+    icon: "https://nw-portfolio-images.s3-us-west-1.amazonaws.com/figma.svg",
     color:
-      "invert(29%) sepia(59%) saturate(1613%) hue-rotate(239deg) brightness(92%) contrast(85%)",
+      "invert(57%) sepia(73%) saturate(6457%) hue-rotate(351deg) brightness(98%) contrast(93%)",
   },
-  {
-    id: 8,
-    name: "React Router",
-    icon:
-      "https://nw-portfolio-images.s3-us-west-1.amazonaws.com/reactrouter.svg",
-    color:
-      "invert(32%) sepia(35%) saturate(1520%) hue-rotate(315deg) brightness(105%) contrast(100%",
-  },
+  // {
+  //   id: 6,
+  //   name: "Redux",
+  //   icon: "https://nw-portfolio-images.s3-us-west-1.amazonaws.com/redux.svg",
+  //   color:
+  //     "invert(29%) sepia(59%) saturate(1613%) hue-rotate(239deg) brightness(92%) contrast(85%)",
+  // },
+  // {
+  //   id: 8,
+  //   name: "React Router",
+  //   icon:
+  //     "https://nw-portfolio-images.s3-us-west-1.amazonaws.com/reactrouter.svg",
+  //   color:
+  //     "invert(32%) sepia(35%) saturate(1520%) hue-rotate(315deg) brightness(105%) contrast(100%",
+  // },
 ]
 
 function Skills(props) {
@@ -182,23 +189,55 @@ function Skills(props) {
   })
   return (
     <div>
-      <p className={skillStyles.tags}>{`<div>`}</p>
-      <p className={skillStyles.innerTags}>{`<div className='Front'>`}</p>
+      <p className={skillStyles.tags}>{`<div className='skills'>`}</p>
+      <p className={skillStyles.innerTags}>{`<div className='front'>`}</p>
       <div className={skillStyles.container}>
         <span className={skillStyles.topBox}>{mappedClientSkills}</span>
       </div>
       <p className={skillStyles.innerTags}>{`</div>`}</p>
-      <p className={skillStyles.innerTags}>{`<div className='Back-DB'>`}</p>
+      <p className={skillStyles.innerTags}>{`<div className='back-db'>`}</p>
       <div className={skillStyles.container}>
         <span className={skillStyles.topBox}>{mappedServerSkills}</span>
       </div>
       <p className={skillStyles.innerTags}>{`</div>`}</p>
-      <p className={skillStyles.innerTags}>{`<div className='Tech'>`}</p>
+      <p className={skillStyles.innerTags}>{`<div className='tech'>`}</p>
       <div className={skillStyles.container}>
         <span className={skillStyles.topBox}>{mappedOtherSkills}</span>
       </div>
       <p className={skillStyles.innerTags}>{`</div>`}</p>
       <p className={skillStyles.tags}>{`</div>`}</p>
+      <h1 className={skillStyles.otherSkillsTitle}>Other Skills</h1>
+      <div className={skillStyles.arrow}></div>
+      <div className={skillStyles.otherSkillsContainer}>
+        <span className={skillStyles.hardSoftBox}>
+          <div className={skillStyles.hard}>
+            <h1>Hard</h1>
+            <h3>Redux</h3>
+            <h3>React Context</h3>
+            <h3>React Routes</h3>
+            <h3>React Hooks</h3>
+            <h3>Github</h3>
+            <h3>Axios</h3>
+            <h3>Massive</h3>
+            <h3>ReST</h3>
+            <h3>NextJS</h3>
+            <h3>Scss</h3>
+            <h3>React Native</h3>
+            <h3>Relational Databases</h3>
+          </div>
+          <div className={skillStyles.soft}>
+            <h3>Sales</h3>
+            <h3>Customer Service</h3>
+            <h3>Leadership</h3>
+            <h3>Research</h3>
+            <h3>Productivity Mindset</h3>
+            <h3>Management</h3>
+            <h3>Team Environment</h3>
+            <h3>Communication</h3>
+            <h1>Soft</h1>
+          </div>
+        </span>
+      </div>
     </div>
   )
 }

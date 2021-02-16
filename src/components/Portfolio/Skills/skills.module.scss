@@ -13,8 +13,8 @@ $oceanGreenDim: #61c9a88e;
   width: fit-content;
   text-align: left;
   font-size: 1rem;
-  font-family: monospace;
-  font-weight: 100;
+  font-family: Roboto mono;
+  font-weight: 400;
   color: $black-colorLighter;
   margin: 0px;
 }
@@ -22,8 +22,8 @@ $oceanGreenDim: #61c9a88e;
   width: fit-content;
   text-align: left;
   font-size: 1rem;
-  font-family: monospace;
-  font-weight: 100;
+  font-family: Roboto Mono;
+  font-weight: 200;
   color: $bright-orange;
   margin: 0px;
   padding-left: 2rem;
@@ -57,5 +57,74 @@ $oceanGreenDim: #61c9a88e;
     text-align: center;
     color: $nav-color;
     margin: 0px;
+  }
+}
+
+.otherSkillsTitle {
+  padding: 0.3rem 6rem;
+  border: 1px solid $bananaDim;
+  font-weight: 200;
+  color: $oceanGreen;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -15px;
+}
+.arrow {
+  background-color: $black-color;
+  transform: rotate(45deg);
+  width: 20px;
+  height: 20px;
+  margin: 0%auto;
+  margin-top: -35px;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid $bananaDim;
+  border-right: 3px solid $bananaDim;
+}
+.otherSkillsContainer {
+  .line {
+    width: 100%;
+    border-top: 1px solid $bananaDim;
+  }
+  .hardSoftBox {
+    padding: 0.6rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      text-transform: lowercase;
+      font-weight: 100;
+      color: $oceanGreen;
+      margin: 0rem 0.6rem;
+    }
+    .hard {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      border: 2px solid $bananaDim;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.6rem;
+      h3 {
+        font-weight: 200;
+        color: $bright-orange;
+        margin: 0rem 0.5rem;
+      }
+    }
+    .soft {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      border: 2px solid $bananaDim;
+      width: 100%;
+      padding: 0.6rem;
+      h3 {
+        font-weight: 200;
+        color: $active-color;
+        margin: 0rem 0.5rem;
+      }
+    }
   }
 }

@@ -9,13 +9,11 @@ function portfolio(props) {
     <div className={folioStyles.view}>
       <Layout>
         {/* <FolioHeader /> */}
-        {/* <p className={folioStyles.tags}>{"<h1>"}</p> */}
         <div>
           <h1 className={folioStyles.codeJoke}>
             {"{!goodDay ? setDay(!day) : spreadTheLove()}"}
           </h1>
         </div>
-        {/* <p className={folioStyles.tags}>{"</h1>"}</p> */}
         <Skills />
       </Layout>
     </div>
