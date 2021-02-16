@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import axios from "axios"
 import { Link } from "gatsby"
 import Layout from "../components/Layout/Layout"
-import contactStyle from "./contact.module.scss"
+import contactStyle from "./pageStyles/contact.module.scss"
 
 const MyForm = () => {
   const [serverState, setServerState] = useState({

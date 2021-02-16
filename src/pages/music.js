@@ -1,7 +1,12 @@
 import React from "react"
+import Layout from "../components/Layout/Layout"
 
 function music(props) {
-  return <div>Music</div>
+  return (
+    <Layout>
+      <div>Music</div>
+    </Layout>
+  )
 }
 
 export default music

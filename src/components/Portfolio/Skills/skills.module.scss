@@ -1,0 +1,23 @@
+$nav-color: #dcd9c6;
+$hover-color: #556f7a;
+$active-color: #c97064;
+$black-color: #1b1924;
+$black-colorLighter: #535355;
+//Folio Colors
+$bright-orange: #ffd166;
+$banana: #f7e3af;
+$bananaDim: #f7e3af7a;
+$oceanGreen: #61c9a8;
+
+.objTitle {
+  font-family: monospace;
+  font-weight: 100;
+  color: $oceanGreen;
+}
+img {
+  width: 80px;
+}
+.js {
+  filter: invert(83%) sepia(96%) saturate(7497%) hue-rotate(339deg)
+    brightness(101%) contrast(94%);
+}

@@ -19,8 +19,11 @@ $white: #f3f2f1;
       padding-left: 1rem;
       border-left: 4px solid $black-color;
       margin-top: 3rem;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
       width: 95%;
+      h2 {
+        margin: 0rem;
+      }
     }
     h1 {
       font-family: sans-serif;
@@ -52,7 +55,6 @@ $white: #f3f2f1;
       margin-top: 0rem;
       display: flex;
       button {
-        box-shadow: 2px 3px 10px $black-color;
         transition: all ease 0.3s;
       }
     }
@@ -60,14 +62,14 @@ $white: #f3f2f1;
 }
 
 .portfolio {
-  background-color: #c970647e;
+  background-color: transparent;
   color: $black-color;
   font-family: sans-serif;
   font-weight: 800;
   width: 10rem;
   height: 2.5rem;
   outline: none;
-  border: 3px solid $active-color;
+  border: 3px solid $black-color;
   border-radius: 0;
   margin-right: 1rem;
 }
@@ -77,14 +79,14 @@ $white: #f3f2f1;
   background-color: $active-color;
 }
 .music {
-  background-color: #556f7a7e;
+  background-color: transparent;
   color: $black-color;
   font-family: sans-serif;
   font-weight: 800;
   width: 10rem;
   height: 2.5rem;
   outline: none;
-  border: 3px solid $hover-color;
+  border: 3px solid $black-color;
   border-radius: 0;
 }
 .music:hover {
@@ -93,11 +95,10 @@ $white: #f3f2f1;
   cursor: pointer;
 }
 .photoContainer {
-  padding: 2rem 1rem 0rem 1rem;
+  padding: 1rem 1rem 0rem 1rem;
   width: 50%;
 }
 .picture {
-  border-radius: 0px 20px 20px 0px;
   box-shadow: 10px 10px 0px $black-color;
 }
 

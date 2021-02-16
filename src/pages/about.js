@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
-import aboutStyles from "./about.module.scss"
+import aboutStyles from "./pageStyles/about.module.scss"
 
 function about(props) {
   return (

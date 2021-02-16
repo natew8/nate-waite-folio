@@ -8,14 +8,14 @@ $black-color: #1b1924;
   height: 3rem;
   padding: 0.6rem 0rem;
   color: $black-color;
-  transition: all ease 0.5s;
+  transition: all ease 0.4s;
   z-index: 5;
   h1 {
     text-align: center;
     margin: 0%;
     height: fit-content;
     width: fit-content;
-    transition: all ease 0.3s;
+    transition: all ease 0.4s;
     transform: rotate(45deg);
   }
   h1:hover {
@@ -30,23 +30,52 @@ $black-color: #1b1924;
     align-items: center;
     justify-content: space-evenly;
     list-style-type: none;
-    li {
-      text-align: left;
-      margin: 0%;
-      font-size: 2rem;
-      transition: color ease 0.3s;
-    }
-    li:hover {
-      cursor: pointer;
-      color: $active-color;
-    }
   }
 }
 #container.hide {
   overflow: hidden;
-  color: transparent;
+  .divideLine {
+    transform: rotate(0deg);
+  }
 }
 #container.show {
   overflow: hidden;
-  width: 50rem;
+  width: 76.35rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0rem;
+  text-align: center;
+  font-size: 1.5rem;
+  width: fit-content;
+  font-weight: 900;
+  font-family: sans-serif;
+  color: $hover-color;
+  transition: color ease 0.4s;
+}
+.link:hover {
+  cursor: pointer;
+  color: #c97064;
+  .line {
+    transform: translateX(0);
+  }
+}
+.divideLine {
+  transform: rotate(-45deg);
+  margin: 0rem;
+  width: 3rem;
+  height: 0rem;
+  border-top: 3px solid $black-color;
+  border-bottom: 3px solid $nav-color;
+  transition: transform 0.1s;
+  transition-delay: 0.5s;
+}
+.line {
+  transition: transform ease 0.4s;
+  transform: translateX(-119px);
+  width: 100%;
+  border-top: 2px solid $active-color;
 }

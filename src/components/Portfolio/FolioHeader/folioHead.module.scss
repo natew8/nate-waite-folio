@@ -1,0 +1,47 @@
+$nav-color: #dcd9c6;
+$hover-color: #556f7a;
+$active-color: #c97064;
+$black-color: #1b1924;
+
+//Folio Colors
+$bright-orange: #ffd166;
+$banana: #f7e3af;
+$bananaDim: #f7e3af7a;
+$oceanGreen: #61c9a8;
+.head {
+  margin: 0%;
+  padding: 0rem;
+  position: sticky;
+  top: 0rem;
+}
+
+.nav {
+  max-width: 800px;
+  margin: 0rem auto;
+  padding: 1rem;
+  ul {
+    margin: 0rem;
+    padding: 0rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    .pageNav {
+      text-transform: uppercase;
+      margin: 0px;
+      font-size: 2rem;
+      color: $bananaDim;
+    }
+    .pageNav:hover {
+      cursor: pointer;
+      color: $banana;
+      text-shadow: 0px 0px 10px $bright-orange;
+    }
+  }
+}
+
+.line {
+  margin: 0rem 3px;
+  width: 5px;
+  height: 100%;
+  border: 0.3px solid $active-color;
+}

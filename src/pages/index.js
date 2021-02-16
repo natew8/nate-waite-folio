@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { motion } from "framer-motion"
 import Layout from "../components/Layout/Layout"
 import Titles from "../components/Titles/Titles"
-import homeStyles from "./home.module.scss"
+import homeStyles from "./pageStyles/home.module.scss"
 import { Link } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Flower from "../components/Flower"
@@ -16,7 +16,6 @@ export default function Home() {
     <Layout>
       <div className={homeStyles.homeContainer}>
         <span className={homeStyles.welcome}>
-          <Flower />
           <div id={homeStyles.divText}>
             <motion.h1
               initial={{ opacity: 0, translateY: -100 }}
@@ -31,14 +30,18 @@ export default function Home() {
               transition={{ delay: 1.51, duration: 1.5 }}
             >
               I'm
-              <h1 className={homeStyles.myName}>Nate,</h1>
+              <h1 className={homeStyles.myName}>Nate Waite</h1>,
             </motion.h1>
             <h1>{done ? <Titles /> : <h1>{null}</h1>}</h1>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 9.53, duration: 0.5 }}
+              transition={{ delay: 8, duration: 0.5 }}
             >
+              <h2>
+                Utah based, Full Stack Web Developer working to make the world a
+                more creative place through code and music.
+              </h2>
               <h3>
                 This site was built to serve both as a portfolio for my work in
                 web development, as well as an artist page for my work as a
@@ -49,12 +52,12 @@ export default function Home() {
             <motion.span
               initial={{ opacity: 0, translateX: 100 }}
               animate={{ opacity: 1, translateX: 0 }}
-              transition={{ delay: 9.54, duration: 0.5 }}
+              transition={{ delay: 8, duration: 0.5 }}
             >
               <AniLink cover direction="left" bg="#c97064" to="/portfolio">
                 <button className={homeStyles.portfolio}>.portfolio</button>
               </AniLink>
-              <AniLink cover direction="right" bg="black" to="/about">
+              <AniLink cover direction="right" bg="black" to="/music">
                 <button className={homeStyles.music}>.music</button>
               </AniLink>
               {/* <Link to="/contact">
@@ -64,15 +67,9 @@ export default function Home() {
             <SocialLinks />
           </div>
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 9.56, duration: 0.5 }}
-            className={homeStyles.line}
-          ></motion.div>
-          <motion.div
             initial={{ opacity: 0, translateX: 100 }}
             animate={{ opacity: 1, translateX: 0 }}
-            transition={{ delay: 9.55, duration: 0.5 }}
+            transition={{ delay: 8, duration: 0.5 }}
             className={homeStyles.photoContainer}
           >
             <img

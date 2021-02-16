@@ -9,7 +9,7 @@ function SocialLinks(props) {
       className={socialStyles.iconContainer}
       initial={{ opacity: 0, translateY: 100 }}
       animate={{ opacity: 1, translateY: 0 }}
-      transition={{ delay: 9.5, duration: 0.5 }}
+      transition={{ delay: 8, duration: 0.5 }}
     >
       <a target="_blank" rel="noreferrer" href="https://github.com/natew8">
         <img
