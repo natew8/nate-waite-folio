@@ -6,18 +6,56 @@ $black-colorLighter: #535355;
 //Folio Colors
 $bright-orange: #ffd166;
 $banana: #f7e3af;
-$bananaDim: #f7e3af7a;
+$bananaDim: #f7e3af2f;
 $oceanGreen: #61c9a8;
-
-.objTitle {
+$oceanGreenDim: #61c9a88e;
+.tags {
+  width: fit-content;
+  text-align: left;
+  font-size: 1rem;
   font-family: monospace;
   font-weight: 100;
-  color: $oceanGreen;
+  color: $black-colorLighter;
+  margin: 0px;
 }
-img {
-  width: 80px;
+.innerTags {
+  width: fit-content;
+  text-align: left;
+  font-size: 1rem;
+  font-family: monospace;
+  font-weight: 100;
+  color: $bright-orange;
+  margin: 0px;
+  padding-left: 2rem;
 }
-.js {
-  filter: invert(83%) sepia(96%) saturate(7497%) hue-rotate(339deg)
-    brightness(101%) contrast(94%);
+.objTitle {
+  margin: 0%;
+  font-family: monospace;
+  font-weight: 100;
+  color: $oceanGreenDim;
+}
+.container {
+  border: 1px solid $bananaDim;
+  margin: 0rem;
+  padding: 0.6rem;
+}
+.topBox {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skillBox {
+  width: 8%;
+  margin: 0rem 1.5rem;
+  object {
+    width: 100%;
+  }
+  h3 {
+    font-size: 1rem;
+    text-align: center;
+    color: $nav-color;
+    margin: 0px;
+  }
 }

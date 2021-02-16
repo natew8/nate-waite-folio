@@ -7,25 +7,31 @@ $black-colorLighter: #535355;
 //Folio Colors
 $bright-orange: #ffd166;
 $banana: #f7e3af;
-$bananaDim: #f7e3af7a;
+$bananaDim: #f7e3af2f;
 $oceanGreen: #61c9a8;
 .view {
+  overflow-y: scroll;
   background-color: $black-color;
   position: fixed;
   width: 100vw;
   height: 100vh;
   .tags {
-    font-size: 1.3rem;
+    width: fit-content;
+    font-size: 2rem;
     font-family: Great Vibes;
-    font-weight: 800;
+    font-weight: 100;
     color: $black-colorLighter;
+    padding: 10px;
     margin: 0px;
   }
   .codeJoke {
+    border: 1px solid $bananaDim;
+    text-align: center;
     font-family: monospace;
     font-weight: 100;
+    width: fit-content;
     padding: 1rem;
-    margin: 0px;
+    margin: 0px auto;
     color: $oceanGreen;
   }
 }
