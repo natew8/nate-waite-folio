@@ -24,18 +24,18 @@ function menu(props) {
           </AniLink>
         </li>
         <div className={menuStyles.divideLine}></div>
-        <li className={menuStyles.link}>
-          <AniLink
+        <li onClick={() => alert("Coming Soon!")} className={menuStyles.link}>
+          {/* <AniLink
             className={menuStyles.link}
             cover
             direction="right"
             bg="#1b1924"
             to="/music"
             style={{ textDecoration: "none" }}
-          >
-            .music
-            <div className={menuStyles.line}></div>
-          </AniLink>
+          > */}
+          .music
+          <div className={menuStyles.line}></div>
+          {/* </AniLink> */}
         </li>
         <div className={menuStyles.divideLine}></div>
         <li className={menuStyles.link}>

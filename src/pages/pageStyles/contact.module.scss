@@ -5,7 +5,9 @@ $black-color: #1b1924;
 $white: #f3f2f1;
 
 .formContainer {
+  position: relative;
   margin-top: 5.5rem;
+  height: 41rem;
   max-width: 45%;
   h1 {
     // padding: 0px 0.6rem;

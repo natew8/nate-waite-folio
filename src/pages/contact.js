@@ -3,6 +3,7 @@ import axios from "axios"
 import { Link } from "gatsby"
 import Layout from "../components/Layout/Layout"
 import contactStyle from "./pageStyles/contact.module.scss"
+import SocialLinks from "../components/SocialLinks/SocialLinks"
 
 const MyForm = () => {
   const [serverState, setServerState] = useState({
@@ -102,6 +103,7 @@ const MyForm = () => {
             </p>
           )}
         </form>
+        <SocialLinks />
       </div>
     </Layout>
   )

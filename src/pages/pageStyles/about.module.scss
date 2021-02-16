@@ -1,6 +1,8 @@
 .about {
   h1 {
-    margin: 0%;
+    width: fit-content;
+    margin: 0% auto;
+    margin-bottom: 1rem;
   }
   h2 {
     margin: 0%;
@@ -11,16 +13,14 @@
     margin: 0%;
     margin-bottom: 0.6rem;
   }
-  .pOne {
+  .pA {
+    padding-left: 1rem;
+    border-left: 5px solid #000000;
     text-align: left;
   }
-  .pTwo {
-    text-align: right;
-  }
-  .pThree {
-    text-align: left;
-  }
-  .pFour {
+  .pB {
+    padding-right: 1rem;
+    border-right: 5px solid #000;
     text-align: right;
   }
 }

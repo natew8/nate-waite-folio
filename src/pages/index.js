@@ -30,7 +30,7 @@ export default function Home() {
               transition={{ delay: 1.51, duration: 1.5 }}
             >
               I'm
-              <h1 className={homeStyles.myName}>Nate Waite</h1>,
+              <h1 className={homeStyles.myName}>Nate</h1>,
             </motion.h1>
             <h1>{done ? <Titles /> : <h1>{null}</h1>}</h1>
             <motion.div
@@ -57,9 +57,14 @@ export default function Home() {
               <AniLink cover direction="left" bg="#c97064" to="/portfolio">
                 <button className={homeStyles.portfolio}>.portfolio</button>
               </AniLink>
-              <AniLink cover direction="right" bg="black" to="/music">
-                <button className={homeStyles.music}>.music</button>
-              </AniLink>
+              {/* <AniLink cover direction="right" bg="black" to="/music"> */}
+              <button
+                onClick={() => alert("Coming Soon!")}
+                className={homeStyles.music}
+              >
+                .music
+              </button>
+              {/* </AniLink> */}
               {/* <Link to="/contact">
                 <button className={homeStyles.contact}>.contact</button>
               </Link> */}

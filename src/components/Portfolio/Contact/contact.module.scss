@@ -1,9 +1,43 @@
+$nav-color: #dcd9c6;
+$hover-color: #556f7a;
+$active-color: #c97064;
+$black-color: #1b1924;
+$black-colorLighter: #535355;
+//Folio Colors
+$bright-orange: #ffd166;
+$banana: #f7e3af;
+$bananaDim: #f7e3af2f;
+$oceanGreen: #61c9a8;
+$oceanGreenDim: #61c9a88e;
 .container {
+  border: 1px solid $bananaDim;
   position: relative;
-}
-
-.social {
-  position: fixed;
-  bottom: 0%;
-  z-index: 8000000000;
+  padding: 4rem;
+  h1 {
+    color: $oceanGreen;
+    font-weight: 200;
+    width: fit-content;
+    margin: 0% auto;
+    margin-bottom: 1rem;
+  }
+  .link {
+    width: fit-content;
+    margin: 0% auto;
+    .button {
+      text-align: center;
+      padding: 0.6rem 0.25rem;
+      font-size: 1.25rem;
+      outline: none;
+      width: 10rem;
+      color: $oceanGreen;
+      background-color: transparent;
+      border: 2px solid $oceanGreen;
+      margin: 0% auto;
+      transition: all ease 0.3s;
+    }
+    .button:hover {
+      background-color: $oceanGreen;
+      color: $black-color;
+    }
+  }
 }
