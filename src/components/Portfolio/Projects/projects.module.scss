@@ -1,0 +1,93 @@
+$nav-color: #dcd9c6;
+$hover-color: #556f7a;
+$active-color: #c97064;
+$black-color: #1b1924;
+$black-colorLighter: #535355;
+//Folio Colors
+$bright-orange: #ffd166;
+$banana: #f7e3af;
+$bananaDim: #f7e3af2f;
+$oceanGreen: #61c9a8;
+$oceanGreenDim: #61c9a88e;
+
+.projectsHeader {
+  text-align: center;
+  padding: 01rem 0rem;
+  border: 1px solid $bananaDim;
+  font-weight: 500;
+  color: $oceanGreen;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.arrow {
+  background-color: $black-color;
+  transform: rotate(45deg);
+  width: 20px;
+  height: 20px;
+  margin: 0%auto;
+  margin-top: -35px;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid $bananaDim;
+  border-right: 3px solid $bananaDim;
+}
+.projectContainer {
+  padding: 0.6rem;
+  border: 1px solid $bananaDim;
+  display: flex;
+  margin-bottom: 1rem;
+  img {
+    margin: 0%;
+    width: 50%;
+  }
+}
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  padding: 0rem 0.6rem;
+  h1 {
+    font-weight: 200;
+    padding-left: 0.5rem;
+    margin: 0%;
+    border-left: 2px solid $bright-orange;
+    color: $bright-orange;
+  }
+  p {
+    color: $nav-color;
+    font-size: 1.25rem;
+  }
+  .techUsed {
+    font-size: 1rem;
+    text-align: center;
+  }
+  span {
+    display: flex;
+    justify-content: center;
+    a {
+      margin: 0rem 1rem;
+      button {
+        font-size: 1.25rem;
+        text-transform: lowercase;
+        color: $bright-orange;
+        outline: none;
+        border: 2px solid $bright-orange;
+        border-radius: 0%;
+        background-color: transparent;
+        width: 10rem;
+        height: 2.25rem;
+        transition: all ease 0.3s;
+      }
+      button:hover {
+        cursor: pointer;
+        color: $black-color;
+        background-color: $bright-orange;
+      }
+    }
+  }
+  h6 {
+    margin: 0%;
+    color: $black-colorLighter;
+  }
+}

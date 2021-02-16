@@ -205,13 +205,11 @@ function Skills(props) {
         <span className={skillStyles.topBox}>{mappedOtherSkills}</span>
       </div>
       <p className={skillStyles.innerTags}>{`</div>`}</p>
-      <p className={skillStyles.tags}>{`</div>`}</p>
-      <h1 className={skillStyles.otherSkillsTitle}>Other Skills</h1>
-      <div className={skillStyles.arrow}></div>
+      <p className={skillStyles.innerTags}>{`<div className='other'>`}</p>
       <div className={skillStyles.otherSkillsContainer}>
         <span className={skillStyles.hardSoftBox}>
           <div className={skillStyles.hard}>
-            <h1>Hard</h1>
+            <h1>{"<hard>"}</h1>
             <h3>Redux</h3>
             <h3>React Context</h3>
             <h3>React Routes</h3>
@@ -227,6 +225,7 @@ function Skills(props) {
           </div>
           <div className={skillStyles.soft}>
             <h3>Sales</h3>
+            <h3>Marketing</h3>
             <h3>Customer Service</h3>
             <h3>Leadership</h3>
             <h3>Research</h3>
@@ -234,10 +233,12 @@ function Skills(props) {
             <h3>Management</h3>
             <h3>Team Environment</h3>
             <h3>Communication</h3>
-            <h1>Soft</h1>
+            <h1>{`<Soft>`}</h1>
           </div>
         </span>
+        <p className={skillStyles.innerTags}>{`</div>`}</p>
       </div>
+      <p className={skillStyles.tags}>{`</div>`}</p>
     </div>
   )
 }

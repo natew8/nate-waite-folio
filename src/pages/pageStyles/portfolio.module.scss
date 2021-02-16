@@ -12,6 +12,7 @@ $bananaDim: #f7e3af2f;
 $oceanGreen: #61c9a8;
 .view {
   overflow-y: scroll;
+  background: linear-gradient(45deg, #1b1924 50%, #464649 100%);
   background-color: $black-color;
   position: fixed;
   width: 100vw;
@@ -28,8 +29,9 @@ $oceanGreen: #61c9a8;
   .codeJoke {
     border: 1px solid $bananaDim;
     text-align: center;
-    font-family: monospace;
-    font-weight: 100;
+    font-size: 1.5rem;
+    font-family: Roboto Mono;
+    font-weight: 500;
     width: fit-content;
     padding: 1rem;
     margin: 0px auto;

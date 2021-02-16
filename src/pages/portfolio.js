@@ -3,6 +3,8 @@ import React from "react"
 import Layout from "../components/Layout/Layout"
 import folioStyles from "./pageStyles/portfolio.module.scss"
 import Skills from "../components/Portfolio/Skills/Skills"
+import Projects from "../components/Portfolio/Projects/Projects"
+import Contact from "../components/Portfolio/Contact/Contact"
 
 function portfolio(props) {
   return (
@@ -15,6 +17,8 @@ function portfolio(props) {
           </h1>
         </div>
         <Skills />
+        <Projects />
+        <Contact />
       </Layout>
     </div>
   )
